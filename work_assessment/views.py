@@ -67,7 +67,8 @@ def moringa(request):
                }
     return render(request, 'moringa.html', context)
 
+@login_required
 def others(request):
-    users = Moringa.objects.all()
+    users = User.objects.all()
     context = {'users': users}
     return render(request, 'others.html', context)

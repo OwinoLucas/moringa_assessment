@@ -13,6 +13,8 @@ class Moringa(models.Model):
     def __str__(self):
         return self.user.username
 
+
+
     # @property
     # def profile_pic_url(self):
     #     if self.profile_pic and hasattr(self.profile_pic, 'url'):
@@ -35,9 +37,7 @@ class Moringa(models.Model):
         self.delete()
 
 
-    class Meta:
-
-      ordering = ["-pk"]
+   
 
     # def create_moringa_profile(sender, **kwargs):
     #     if kwargs['created']:

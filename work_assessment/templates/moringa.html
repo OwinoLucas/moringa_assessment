@@ -9,23 +9,14 @@
             <h5 class="card-title">{{ user.email }}</h5>
             <p class="card-text">Hello {{user.username}}, displayed is the user input entered showing how data can be collected and viewed using MVC architecture
             </p>
-            <p>You can test the fuctionality by registering another user and the infomation will be displayed in All users page.
+            <p>You can test the fuctionality by registering another user and the infomation will be displayed in All users page. Since we are using user authentication, you need to log in to view data. The user Lucas with vcxz1234 as the password has already
+                been created and can be used as login credentials.
                 <p>
                     <a href="{% url 'registration' %}" class="btn btn-primary">Register</a>
                 </p>
         </div>
     </div>
-    {% for user in users %} {% if user %}
-    <div class="card">
-        <div class="card-header">
-            {{user.user.username}}
-        </div>
-        <div class="card-body">
-            <h5 class="card-title" style="font-weight: bold;">{{ user.email }}</h5>
 
-        </div>
-    </div>
-    {% endif %}{% endfor %}
 </div>
 
 {% endblock content %}

@@ -12,7 +12,7 @@ To get the project .......
 ##### Cloning the repository:
 
 ```bash
-https://github.com/OwinoLucas/I-Reporter.git
+https://github.com/OwinoLucas/moringa_assessment.git
 ```
 
 ##### Navigate into the folder and install requirements

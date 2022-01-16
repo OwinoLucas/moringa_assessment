@@ -1,0 +1,54 @@
+{% extends 'base.html' %} {% load static %} {% load crispy_forms_tags %} {% block content %}
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Work Assessment</h1>
+        <p class="lead">Model-View-Controller is a software design pattern for developing web applications
+
+        </p>
+    </div><br>
+
+    <p><strong>Model</strong></p>
+    <ul>
+        <li>
+            <p>This part of the MVC represents actual data that an applications deals with.</p>
+
+        </li>
+        <li>
+            <p>Technically its the logical structure of an application's database, including the relationships and constraints that determine how data can be stored and accessed.</p>
+        </li>
+        <li>
+            <p>It doesn't depend on either view or controller, meaning any manipulation done by view and/or controller doesn't affect the model.</p>
+        </li>
+    </ul>
+    <p><strong>View</strong></p>
+    <ul>
+        <li>
+            <p>This part presents what the user will see on their user interface.</p>
+
+        </li>
+        <li>
+            <p>The data created in the model or rather, user input is viewed and entered here before it is stored in its respective model.</p>
+        </li>
+
+    </ul>
+    <p><strong>Controller</strong></p>
+    <ul>
+        <li>
+            <p>This part acts as the 'middle-man' between the model and the view.</p>
+
+        </li>
+        <li>
+            <p>It updates the model when users manipulate the view and updates the view when the model changes.</p>
+        </li>
+        <li>
+            <p>It basically controls the interaction between the model and the view.</p>
+        </li>
+    </ul>
+    <br>
+    <hr class="my-4">
+    <p>Lets demonstrate the MVC architecture with user authentication, how input from the view can be entered by the user, stored in the model and handled by the controller which can then render the input on another view page.</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{% url 'login' %}" role="button">Login</a>
+    </p>
+</div>
+{% endblock content %}
